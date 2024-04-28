@@ -18,7 +18,7 @@ export default function ContactUs({}: Props) {
     window.location.href = `mailto:sangaihte@gmail.com?subject=${formData.subject}&body=Hi, my name is${formData.name}, ${formData.message} ${formData.email}`;
   };
   return (
-    <div className="h-screen flex flex-col text-center md:text-left max-w-7xl px-8 justify-evenly mx-auto items-center">
+    <div className="h-screen flex flex-col text-center  max-w-7xl justify-evenly mx-auto items-center">
       <h4 className="text-2xl p-5 md:text-4xl font-semibold justify-center text-center">
         I have got just what you need.
         <span className="decoration-[#f7ab0a]/50 underline">Lets talk</span>
