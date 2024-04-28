@@ -86,4 +86,8 @@
     .topic{
       @apply font-medium text-sm text-gray-500 hover:text-black
     }
+    .heroButton{
+@apply px-6 py-2 border border-gray-500 tracking-widest text-gray-500 rounded-full uppercase text-xs transition-all hover:border-black hover:text-black
+    
+    }
   }

@@ -18,11 +18,12 @@ import logo from "../public/logo.png";
 
 export default function Header() {
   return (
-    <div className="flex items-center max-w-6xl mx-auto justify-around p-2 ">
+    <div className="flex flex-col md:flex-row items-center max-w-6xl mx-auto justify-around p-2 ">
+      
       <Link href="/" className="flex">
         <Image
           src={logo}
-          className="rounded-lg bg-black"
+          className="rounded-lg bg-black items-center"
           alt="logo"
           width={40}
           height={30}

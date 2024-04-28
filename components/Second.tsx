@@ -20,7 +20,7 @@ export default function Second({}: Props) {
           // placeholder=" this is text" // Optional blur-up while loading
         />
         <div
-          className="inline absolute mt-0 top-0 pt-40 xl:pt-55 left-10 lg:mt-40
+          className="hidden md:inline absolute mt-0 top-0 pt-40 xl:pt-55 left-10 lg:mt-40
         z-20 h-full w-full pl-10 space-y-5 text-white"
         >
           <h2 className="text-[10px] w-2/4 lg:text-md font-bold max-w-sm z-50 p-1 bg-black/50 bg-contain">
@@ -47,7 +47,7 @@ export default function Second({}: Props) {
           // placeholder=" this is thext" // Optional blur-up while loading
         />
         <div
-          className="inline absolute mt-0 top-0 pt-40 xl:pt-55 left-10 lg:mt-40
+          className="hidden md:inline absolute mt-0 top-0 pt-40 xl:pt-55 left-10 lg:mt-40
         z-20 h-full w-full pl-10 space-y-5 text-white"
         >
           <h2 className="text-[10px] w-2/4 lg:text-md font-bold max-w-sm z-50 p-1 bg-black/50 bg-contain">
