@@ -18,26 +18,12 @@ export default function ContactUs({}: Props) {
     window.location.href = `mailto:sangaihte@gmail.com?subject=${formData.subject}&body=Hi, my name is${formData.name}, ${formData.message} ${formData.email}`;
   };
   return (
-    <div className="h-screen flex flex-col text-center md:text-left max-w-7xl px-10 justify-evenly mx-auto items-center">
-      <h4 className="text-4xl font-semibold justify-center text-center">
+    <div className="h-screen flex flex-col text-center md:text-left max-w-7xl px-8 justify-evenly mx-auto items-center">
+      <h4 className="text-2xl p-5 md:text-4xl font-semibold justify-center text-center">
         I have got just what you need.
         <span className="decoration-[#f7ab0a]/50 underline">Lets talk</span>
       </h4>
-      <div className="flex space-x-10 items-center justify-between">
-        <div className="space-y-10  p-5">
-          <div className="flex items-center space-x-5 justify-center">
-            <PhoneCall className="text-[#f7ab0a] h-7 w-7 animate-pulse" />
-            <p className="text-2xl">+123456789</p>
-          </div>
-          <div className="flex items-center space-x-5 justify-center">
-            <Mail className="text-[#f7ab0a] h-7 w-7 animate-pulse" />
-            <p className="text-2xl">frameimpacts@gmail.com</p>
-          </div>
-          <div className="flex items-center space-x-5 justify-center">
-            <MapPinnedIcon className="text-[#f7ab0a] h-7 w-7 animate-pulse" />
-            <p className="text-2xl">Lapalang, Shillong</p>
-          </div>
-        </div>
+      <div className="flex space-y-5 space-x-10 items-center">
         <form
           onSubmit={handleSubmit(onSubmit)}
           className="flex flex-col space-y-2 mx-auto"
