@@ -21,6 +21,8 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col">
         {/* Header */}
         <header className="border-b sticky top-0 bg-white z-50">
+          
+          
           <Header />
         </header>
 

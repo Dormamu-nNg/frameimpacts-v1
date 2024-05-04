@@ -1,7 +1,6 @@
 "use client";
-import * as React from "react";
+import { useState } from "react";
 import Link from "next/link";
-import { cn } from "@/lib/utils";
 import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
 import {
   NavigationMenu,
@@ -14,23 +13,91 @@ import {
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
 import Image from "next/image";
-import logo from "../public/logo.png";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "@/components/ui/collapsible";
+import { MenuIcon, ChevronsUpDown } from "lucide-react";
+import { Button } from "./ui/button";
+import comingsoon from "../public/comingsoon.webp";
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div className="flex flex-col md:flex-row items-center max-w-6xl mx-auto justify-around p-2 ">
-      
-      <Link href="/" className="flex">
-        <Image
+    <div className="flex md:items-center max-w-6xl mx-auto justify-between p-2 ">
+      <Link href="/" className="flex items-center">
+        {/* <Image
           src={logo}
           className="rounded-lg bg-black items-center"
           alt="logo"
           width={40}
           height={30}
-        />
+        /> */}
         <p className="p-3 font-light uppercase font-mono">FrameImpacts</p>
       </Link>
-      <div className="flex space-x-5  items-center">
+      <div className="md:hidden inline-flex justify-center">
+        <Sheet>
+          <SheetTrigger>
+            <Button variant="outline">
+              <MenuIcon />
+            </Button>
+          </SheetTrigger>
+          <SheetContent className="flex flex-col items-center bg-gray-200">
+            <Link href="/" className="font-semibold text-lg">
+              Home
+            </Link>
+            <Collapsible
+              open={isOpen}
+              onOpenChange={setIsOpen}
+              className="flex flex-col space-y-2 items-center"
+            >
+              <div className="flex items-center justify-center space-x-4 px-4">
+                <CollapsibleTrigger asChild>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="flex justify-center"
+                  >
+                    <ChevronsUpDown className="h-4 w-4" />
+                    <h1 className="font-semibold text-lg">Our Services</h1>
+                  </Button>
+                </CollapsibleTrigger>
+              </div>
+
+              <CollapsibleContent className="space-y-3 items-center mx-auto">
+                <div className="flex flex-col justify-center py-3 text-sm">
+                  <Link href="#" className="font-medium">
+                    Capacity Building
+                  </Link>
+                  <Link href="#" className="font-medium">
+                    Co-Design Frameworks
+                  </Link>
+                  <Link href="#" className="font-medium">
+                    Start-Up Mentoring
+                  </Link>
+                  <Link href="#" className="font-medium">
+                    RAS
+                  </Link>
+                </div>
+              </CollapsibleContent>
+            </Collapsible>
+            <Link href="/ourwork" className="font-semibold text-lg">
+              Our Work
+            </Link>
+            <Link href="/aboutus" className="font-semibold text-lg">
+              About Us
+            </Link>
+            <Link href="/contactus" className="font-semibold text-lg">
+              Contact Us
+            </Link>
+          </SheetContent>
+        </Sheet>
+      </div>
+
+      <div className="hidden md:flex space-x-5  items-center">
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem>
@@ -41,42 +108,62 @@ export default function Header() {
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuTrigger>About Us</NavigationMenuTrigger>
+              <NavigationMenuTrigger>Our Services</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                  <li className="row-span-3">
+                <div className="grid mx-auto w-[500px] grid-cols-6">
+                  <div className="col-span-3 ">
                     <NavigationMenuLink asChild>
-                      <a className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md">
-                        <div className="mb-2 mt-4 text-lg font-medium">
-                          FrameImpacts
-                        </div>
-                        <p className="text-sm leading-tight text-muted-foreground">
-                          Beautifully designed components that you can copy and
-                          paste into your apps. Accessible. Customizable. Open
-                          Source.
-                        </p>
+                      <a className="flex h-full w-full select-none items-center justify-center rounded-md bg-gradient-to-b from-muted/50 to-muted p-3 no-underline outline-none focus:shadow-md">
+                        <Image
+                          src={comingsoon}
+                          alt="image"
+                          width={500}
+                          height={500}
+                          className="w-60 h-40 rounded-md items-center"
+                        />
                       </a>
                     </NavigationMenuLink>
-                  </li>
-                  <div>
-                    <p>Who we are</p>
-                    <ListItem href="" title="Our Team">
-                      Click know more
-                    </ListItem>
                   </div>
-                  <div>
-                    <p>What we do</p>
-                    <ListItem href="" title="Social Impact">
-                      Click know more
-                    </ListItem>
+                  <div className="col-span-3 flex flex-col justify-center p-5 text-lg cursor-pointer">
+                    <Link
+                      href="/ourservices/#CapacityBuilding"
+                      className="hover:bg-gray-300 p-2 rounded-lg"
+                    >
+                      Capacity Building
+                    </Link>
+                    <Link
+                      href="/ourservices/#CoDesignFrameworks"
+                      className="hover:bg-gray-300 p-2 rounded-lg"
+                    >
+                      Co-Design Frameworks
+                    </Link>
+                    <Link
+                      href="/ourservices/#StartUpMentoring"
+                      className="hover:bg-gray-300 p-2 rounded-lg"
+                    >
+                      Start-Up Mentoring
+                    </Link>
+                    <Link
+                      href="/ourservices/#ras"
+                      className="hover:bg-gray-300 p-2 rounded-lg"
+                    >
+                      RAS
+                    </Link>
                   </div>
-                </ul>
+                </div>
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/ourservices">
+              <Link href="/ourwork">
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  Our Services
+                  Our Work
+                </NavigationMenuLink>
+              </Link>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <Link href="/publishedlibrary">
+                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                  Published Library
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
@@ -93,29 +180,3 @@ export default function Header() {
     </div>
   );
 }
-
-const ListItem = React.forwardRef<
-  React.ElementRef<"a">,
-  React.ComponentPropsWithoutRef<"a">
->(({ className, title, children, ...props }, ref) => {
-  return (
-    <li>
-      <NavigationMenuLink asChild>
-        <a
-          ref={ref}
-          className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-            className
-          )}
-          {...props}
-        >
-          <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-            {children}
-          </p>
-        </a>
-      </NavigationMenuLink>
-    </li>
-  );
-});
-ListItem.displayName = "ListItem";
