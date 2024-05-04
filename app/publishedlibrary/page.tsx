@@ -6,7 +6,7 @@ type Props = {};
 function PublishedLibrary({}: Props) {
   return (
     <div className="flex flex-col items-center justify-center space-y-5 max-w-7xl">
-      <div className="flex flex-col space-y-5 items-center bg-gradient-to-tr from-blue-300 to-blue-600 h-60 w-full">
+      <div className="flex flex-col space-y-5 items-center mx-auto bg-gradient-to-tr from-blue-300 to-blue-600 h-60 w-full">
         <h1 className="text-4xl items-center justify-center mx-auto">Blogs</h1>
         <p className="text-lg">Coming Soon</p>
       </div>

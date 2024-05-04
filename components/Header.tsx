@@ -36,7 +36,7 @@ export default function Header() {
           width={40}
           height={30}
         /> */}
-        <p className="p-3 font-light uppercase font-mono">FrameImpacts</p>
+        <h1 className="p-3 font-light uppercase font-mono">FrameImpacts</h1>
       </Link>
       <div className="md:hidden inline-flex justify-center">
         <Sheet>
@@ -46,6 +46,10 @@ export default function Header() {
             </Button>
           </SheetTrigger>
           <SheetContent className="flex flex-col items-center bg-gray-200">
+            <h1 className="p-3 font-light text-lg uppercase font-mono">
+              FrameImpacts
+            </h1>
+
             <Link href="/" className="font-semibold text-lg">
               Home
             </Link>
@@ -61,24 +65,36 @@ export default function Header() {
                     size="sm"
                     className="flex justify-center"
                   >
-                    <ChevronsUpDown className="h-4 w-4" />
                     <h1 className="font-semibold text-lg">Our Services</h1>
+                    <ChevronsUpDown className="h-4 w-4" />
                   </Button>
                 </CollapsibleTrigger>
               </div>
 
-              <CollapsibleContent className="space-y-3 items-center mx-auto">
-                <div className="flex flex-col justify-center py-3 text-sm">
-                  <Link href="#" className="font-medium">
+              <CollapsibleContent className="space-y-3 font-medium items-center mx-auto">
+                <div className="flex flex-col justify-center py-5 text-sm">
+                  <Link
+                    href="/ourservices/#CapacityBuilding"
+                    className="hover:bg-gray-300 p-2 rounded-lg"
+                  >
                     Capacity Building
                   </Link>
-                  <Link href="#" className="font-medium">
+                  <Link
+                    href="/ourservices/#CoDesignFrameworks"
+                    className="hover:bg-gray-300 p-2 rounded-lg"
+                  >
                     Co-Design Frameworks
                   </Link>
-                  <Link href="#" className="font-medium">
+                  <Link
+                    href="/ourservices/#StartUpMentoring"
+                    className="hover:bg-gray-300 p-2 rounded-lg"
+                  >
                     Start-Up Mentoring
                   </Link>
-                  <Link href="#" className="font-medium">
+                  <Link
+                    href="/ourservices/#ras"
+                    className="hover:bg-gray-300 p-2 rounded-lg"
+                  >
                     RAS
                   </Link>
                 </div>
@@ -124,7 +140,7 @@ export default function Header() {
                       </a>
                     </NavigationMenuLink>
                   </div>
-                  <div className="col-span-3 flex flex-col justify-center p-5 text-lg cursor-pointer">
+                  <div className="col-span-3 flex flex-col justify-center p-5 text-sm cursor-pointer">
                     <Link
                       href="/ourservices/#CapacityBuilding"
                       className="hover:bg-gray-300 p-2 rounded-lg"

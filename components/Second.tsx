@@ -20,7 +20,7 @@ export default function Second({}: Props) {
           // placeholder=" this is text" // Optional blur-up while loading
         />
 
-        <p className="p-3 text-center text-lg font-medium line-clamp-5 mx-8">
+        <p className="p-3 text-center text-lg mx-8">
           Transforming India’s North East Region social development landscape
           through data-driven insights, monitoring & evaluation tools, and
           innovative practices.
@@ -39,7 +39,7 @@ export default function Second({}: Props) {
           // placeholder=" this is thext" // Optional blur-up while loading
         />
 
-        <p className="p-3 text-center font-medium text-lg line-clamp-5  bg-cover mx-8">
+        <p className="p-3 text-center text-lg  bg-cover mx-8">
           Championing an inclusive approach to impactful development in
           Northeast India and beyond, through co-creation with local
           stakeholders and effective partnerships.
