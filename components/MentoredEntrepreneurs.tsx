@@ -8,7 +8,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Image from "next/image";
-import comingsoon from "../public/comingsoon.webp";
+import { comingsoon } from "@/images";
 type Props = {};
 
 function MentoredEntrepreneurs({}: Props) {

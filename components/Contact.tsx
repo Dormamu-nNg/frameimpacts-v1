@@ -3,6 +3,7 @@
 import { Mail, MapPinnedIcon, PhoneCall } from "lucide-react";
 import React from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
+import { Button } from "./ui/button";
 type Props = {};
 type Inputs = {
   name: string;
@@ -68,12 +69,12 @@ export default function Contact({}: Props) {
             placeholder="Message"
             className="contactInput"
           />
-          <button
+          <Button
             type="submit"
             className="bg-[#f7ab0a] py-5 px-10 rounded-md text-black font-bold text-lg"
           >
             Submit
-          </button>
+          </Button>
         </form>
       </div>
     </div>

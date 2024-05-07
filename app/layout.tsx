@@ -18,11 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="min-h-screen flex flex-col">
+      <body className="min-h-screen flex flex-col bg-[#fff1d0]">
         {/* Header */}
-        <header className="border-b sticky top-0 bg-white z-50">
-          
-          
+        <header className=" sticky top-0 bg-[#073b4c]/90 z-50">
           <Header />
         </header>
 

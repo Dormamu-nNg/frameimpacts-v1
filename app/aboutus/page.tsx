@@ -6,15 +6,15 @@ type Props = {};
 export default function About({}: Props) {
   return (
     <div className="flex flex-col">
-      <h1 className="text-4xl mx-auto font-bold items-center p-10 uppercase">
+      <h1 className="text-4xl mx-auto font-bold items-center p-10 uppercase text-[#F02D3A]">
         About Us
       </h1>
       <section className="flex">
-        <div className="flex flex-col items-start mx-auto max-w-5xl">
-          <h1 className="text-2xl font-semibold py-3 px-5 md:px-0">
+        <div className="flex flex-col items-start mx-auto max-w-5xl ">
+          <h1 className="text-2xl font-semibold py-3 px-5 md:px-0 text-[#010B13]">
             Chairman of Board of Directors Message
           </h1>
-          <p className="text-xl font-medium py-3 px-5 md:px-0">
+          <p className="text-xl font-medium py-3 px-5 md:px-0 text-[#010B13]">
             Dear Esteemed Partners and Collaborators,
           </p>
           <p className="aboutP">

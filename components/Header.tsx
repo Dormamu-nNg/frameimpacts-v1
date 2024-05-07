@@ -21,22 +21,24 @@ import {
 } from "@/components/ui/collapsible";
 import { MenuIcon, ChevronsUpDown } from "lucide-react";
 import { Button } from "./ui/button";
-import comingsoon from "../public/comingsoon.webp";
+import { comingsoon, logo } from "@/images";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="flex md:items-center max-w-6xl mx-auto justify-between p-2 ">
+    <div className="flex md:items-center max-w-6xl mx-auto justify-between p-2">
       <Link href="/" className="flex items-center">
-        {/* <Image
+        <Image
           src={logo}
-          className="rounded-lg bg-black items-center"
+          className="rounded-lg items-center"
           alt="logo"
-          width={40}
-          height={30}
-        /> */}
-        <h1 className="p-3 font-light uppercase font-mono">FrameImpacts</h1>
+          width={60}
+          height={60}
+        />
+        <h1 className="p-3 font-light uppercase font-mono text-[#ffb703]">
+          FrameImpacts
+        </h1>
       </Link>
       <div className="md:hidden inline-flex justify-center">
         <Sheet>
@@ -124,9 +126,16 @@ export default function Header() {
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
+              <Link href="/aboutus">
+                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                  About Us
+                </NavigationMenuLink>
+              </Link>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
               <NavigationMenuTrigger>Our Services</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <div className="grid mx-auto w-[500px] grid-cols-6">
+                <div className="grid mx-auto w-[500px] grid-cols-6 bg-[#023047]">
                   <div className="col-span-3 ">
                     <NavigationMenuLink asChild>
                       <a className="flex h-full w-full select-none items-center justify-center rounded-md bg-gradient-to-b from-muted/50 to-muted p-3 no-underline outline-none focus:shadow-md">
@@ -143,25 +152,25 @@ export default function Header() {
                   <div className="col-span-3 flex flex-col justify-center p-5 text-sm cursor-pointer">
                     <Link
                       href="/ourservices/#CapacityBuilding"
-                      className="hover:bg-gray-300 p-2 rounded-lg"
+                      className={navigationMenuTriggerStyle()}
                     >
                       Capacity Building
                     </Link>
                     <Link
                       href="/ourservices/#CoDesignFrameworks"
-                      className="hover:bg-gray-300 p-2 rounded-lg"
+                      className={navigationMenuTriggerStyle()}
                     >
                       Co-Design Frameworks
                     </Link>
                     <Link
                       href="/ourservices/#StartUpMentoring"
-                      className="hover:bg-gray-300 p-2 rounded-lg"
+                      className={navigationMenuTriggerStyle()}
                     >
                       Start-Up Mentoring
                     </Link>
                     <Link
                       href="/ourservices/#ras"
-                      className="hover:bg-gray-300 p-2 rounded-lg"
+                      className={navigationMenuTriggerStyle()}
                     >
                       RAS
                     </Link>

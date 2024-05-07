@@ -1,44 +1,42 @@
 import Image from "next/image";
 import React from "react";
-import stories1 from "../public/1.webp";
-import stories2 from "../public/2.webp";
-import stories3 from "../public/3.webp";
-import stories4 from "../public/4.webp";
+import { dci, highland, neicord, prime, rilum, rilumLogo } from "@/images";
 
 type Props = {};
 
-export default function Third({}: Props) {
+export default function Fourth({}: Props) {
   return (
-    <div className="flex flex-col items-center justify-center ">
-      <h1 className=" uppercase text-center p-5 pt-10 text-4xl font-extrabold">
+    <div className="flex flex-col items-center justify-center mx-auto max-w-6xl">
+      <h1 className=" uppercase text-center p-5 pt-10 text-4xl font-extrabold text-[#F02D3A]">
         Our Partners
       </h1>
-      <div className="mx-auto grid grid-cols-2 md:flex flex-row p-10 md:mx-auto items-center justify-evenly">
+      <div className=" mx-auto grid grid-cols-2 md:grid-cols-3 p-10 md:mx-auto items-center justify-center">
+        <Image className=" m-5 " src={dci} alt="" width={300} height={300} />
         <Image
-          className="rounded-2xl md:rounded-3xl m-5 "
-          src={stories1}
-          alt=""
+          className="rounded-2xl md:rounded-xl m-5 "
+          src={rilumLogo}
+          alt="Images not found"
           width={300}
           height={300}
         />
         <Image
-          className="rounded-2xl md:rounded-3xl m-10"
-          src={stories2}
-          alt=""
+          className="rounded-2xl md:rounded-xl m-10"
+          src={neicord}
+          alt="Images not found"
           width={300}
           height={300}
         />
         <Image
-          className="rounded-2xl md:rounded-3xl m-10"
-          src={stories3}
-          alt=""
+          className="rounded-2xl md:rounded-xl m-10"
+          src={highland}
+          alt="Images not found"
           width={300}
           height={300}
         />
         <Image
-          className="rounded-2xl md:rounded-3xl m-10"
-          src={stories4}
-          alt=""
+          className="rounded-2xl md:rounded-xl m-10"
+          src={prime}
+          alt="Images not found"
           width={300}
           height={300}
         />

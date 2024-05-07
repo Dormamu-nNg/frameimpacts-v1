@@ -87,11 +87,11 @@
       @apply font-medium text-xs md:text-sm text-black hover:animate-pulse my-2 mx-2 px-2 py-5 text-center 
     }
     .heroButton{
-@apply px-6 py-2 border border-gray-500 tracking-widest text-gray-500 rounded-md uppercase text-xs transition-all hover:border-black hover:text-black
+@apply px-6 py-2 my-1 border border-[#565656] tracking-widest text-[#565656] rounded-md uppercase text-xs transition-all hover:border-black hover:text-black
     
     }
     .aboutP{
-      @apply text-left text-sm py-3 md:text-base px-5 md:px-0
+      @apply text-left text-sm py-3 md:text-base px-5 md:px-0 text-[#2A3439]
     }
     .ourteamP{
       @apply text-left text-sm md:text-base text-gray-400
@@ -99,4 +99,8 @@
     .ourteamH{
       @apply font-semibold text-lg md:px-0 text-center text-white
     }
+    .navLink{
+      @apply text-base text-[#121113] hover:text-[#F02D3A]  px-3 py-2 active:border border-[#F02D3A]
+    }
+   
   }

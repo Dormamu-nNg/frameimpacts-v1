@@ -1,4 +1,3 @@
-
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import CoDesignAndSupport from "@/components/CoDesignAndSupport";
 import Assessments from "@/components/Assessments";
@@ -11,10 +10,10 @@ type Props = {};
 export default function OurWork({}: Props) {
   return (
     <div className="flex flex-col items-center justify-center">
-      <h1 className="uppercase my-10 text-lg md:text-5xl font-bold">
+      {/* <h1 className="uppercase my-10 text-lg md:text-5xl font-bold text-[#BFA181]">
         discovering new aspects of ourselves
-      </h1>
-      <Tabs defaultValue="all" className="flex flex-col w-full mx-auto">
+      </h1> */}
+      <Tabs defaultValue="all" className="flex flex-col w-full mx-auto mt-10">
         <TabsList className="hidden md:inline-flex mx-auto">
           <TabsTrigger value="all">All</TabsTrigger>
           <TabsTrigger value="cds">CO-DESIGN & SUPPORT</TabsTrigger>
@@ -37,7 +36,7 @@ export default function OurWork({}: Props) {
             <ResearchAndDocumentation />
           </section>
           <section id="five">
-           <MentoredEntrepreneurs/>
+            <MentoredEntrepreneurs />
           </section>
         </TabsContent>
         <TabsContent value="cds">

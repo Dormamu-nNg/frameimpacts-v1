@@ -8,25 +8,24 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Image from "next/image";
-import photo1 from "../public/Rilum Foundation.webp";
-import comingsoon from "../public/comingsoon.webp";
+import { comingsoon, rilum_foundation } from "@/images";
 
 type Props = {};
 
 function CoDesignAndSupport({}: Props) {
   return (
-    <div className="flex flex-col my-5 border-b-gray-500">
+    <div className="flex flex-col my-5 bg-[#d6c3b5]">
       <h1 className="text-2xl mx-auto text-red-500 font-bold my-1">
         CO-DESIGN & SUPPORT
       </h1>
-      <div className="grid md:grid-cols-2 mx-auto">
-        <Card className="flex flex-col items-center my-3 mx-5">
+      <div className="grid md:grid-cols-3 mx-auto ">
+        <Card className="flex flex-col items-center my-3 mx-5 bg-[#DDD0C8]">
           <CardHeader className="text-lg font-bold my-1">
             RILUM FOUNDATION
           </CardHeader>
           <CardContent className="flex flex-col items-center justify-center ">
             <Image
-              src={photo1}
+              src={rilum_foundation}
               alt="photo"
               height={500}
               width={500}
@@ -44,7 +43,7 @@ function CoDesignAndSupport({}: Props) {
             </CardDescription>
           </CardContent>
         </Card>
-        <Card className="flex flex-col items-center my-3 mx-5">
+        <Card className="flex flex-col items-center my-3 mx-5 bg-[#DDD0C8]">
           <CardHeader className="text-lg font-bold my-1">
             Coming Soon!
           </CardHeader>

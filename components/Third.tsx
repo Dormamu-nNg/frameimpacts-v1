@@ -1,28 +1,25 @@
-import Image from "next/image";
 import React from "react";
-import stories1 from "../public/StoriesCommunitiesHorizontal.jpg";
-import stories2 from "../public/GroundingValues 1.jpg";
 
 type Props = {};
 
 export default function Third({}: Props) {
   return (
-    <div className="flex flex-col max-w-6xl mx-auto bg-slate-100 items-center justify-center">
-      <h1 className=" uppercase text-center p-5 pt-10 text-4xl font-extrabold">
+    <div className="flex flex-col max-w-5xl mx-auto items-center justify-center">
+      <h1 className=" uppercase text-center p-5 pt-10 text-4xl font-bold text-[#F02D3A]">
         Business Strategy Operations
       </h1>
-      <h2 className="p-5 text-center text-2xl font-semibold  ">
+      <h2 className="p-5 text-center text-2xl font-semibold text-[#07a0c3] ">
         Unleashing Sustainable Impact through Serving, Learning and Sharing
       </h2>
       <p className="p-5 text-left text-lg">
         FrameImpacts is is a social impact and development frontier agency that
         engages in diverse pivotal activities to foster sustainable social
         development. We champion a collaborative approach, working closely with
-        our clients to co-design and strategize programs, conduct rigorous
+        our clients to co-design and strategise programs, conduct rigorous
         social impact assessments, research, and generate data-driven insights
         for informed decision-making.
       </p>
-      <h1 className="p-5 font-semibold text-2xl">
+      <h1 className="p-5 font-semibold text-2xl text-[#07a0c3] ">
         Our comprehensive services include:
       </h1>
       <ul className="list-decimal pl-6">
