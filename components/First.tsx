@@ -9,7 +9,7 @@ type Props = {};
 export default function First({}: Props) {
   return (
     <div className="flex flex-col">
-      <div className="flex-full min-w-0 relative">
+      <div className="flex-full min-w-0 relative  shadow-md ">
         <Image
           src={homepage}
           alt="Picture of the author"
@@ -35,7 +35,7 @@ export default function First({}: Props) {
           </Link> */}
         </div>
       </div>
-      <div className="flex flex-col md:flex-row pt-5 space-x-5 space-y-2 items-center justify-center">
+      <div className="flex flex-col md:flex-row pt-5 space-x-5 space-y-3 items-center justify-center">
         <Link href="#second">
           <Button variant="ghost" className="heroButton">
             Vision/Mission

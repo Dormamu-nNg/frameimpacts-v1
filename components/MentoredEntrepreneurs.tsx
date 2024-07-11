@@ -13,7 +13,7 @@ type Props = {};
 
 function MentoredEntrepreneurs({}: Props) {
   return (
-    <div className="flex flex-col my-5 border-b-gray-500">
+    <div className="flex flex-col my-5">
       <h1 className="text-2xl mx-auto text-red-500 font-bold my-1">
         RESEARCH & DOCUMENTATION
       </h1>

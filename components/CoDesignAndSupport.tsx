@@ -14,12 +14,12 @@ type Props = {};
 
 function CoDesignAndSupport({}: Props) {
   return (
-    <div className="flex flex-col my-5 bg-[#d6c3b5]">
-      <h1 className="text-2xl mx-auto text-red-500 font-bold my-1">
+    <div className="flex flex-col my-5">
+      <h1 className="text-2xl mx-auto text-red-500 font-bold my-">
         CO-DESIGN & SUPPORT
       </h1>
-      <div className="grid md:grid-cols-3 mx-auto ">
-        <Card className="flex flex-col items-center my-3 mx-5 bg-[#DDD0C8]">
+      <div className="grid md:grid-cols-3 mx-auto my-7 ">
+        <Card className="flex flex-col items-center my-3 mx-5">
           <CardHeader className="text-lg font-bold my-1">
             RILUM FOUNDATION
           </CardHeader>
@@ -43,7 +43,7 @@ function CoDesignAndSupport({}: Props) {
             </CardDescription>
           </CardContent>
         </Card>
-        <Card className="flex flex-col items-center my-3 mx-5 bg-[#DDD0C8]">
+        <Card className="flex flex-col items-center my-3 mx-5 ">
           <CardHeader className="text-lg font-bold my-1">
             Coming Soon!
           </CardHeader>

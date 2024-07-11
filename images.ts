@@ -42,7 +42,19 @@ const homepage =
   "https://firebasestorage.googleapis.com/v0/b/frameimpacts-c9f47.appspot.com/o/Company%20Homepage%20Pic.jpg?alt=media&token=3119b739-9b71-491c-87ca-6a6d0aaa6dca";
 const blog =
   "https://firebasestorage.googleapis.com/v0/b/frameimpacts-c9f47.appspot.com/o/blog.jpeg?alt=media&token=6cff1d8b-9f90-4ee4-b399-ef33979e96b1";
+const rayburncollege =
+  "https://firebasestorage.googleapis.com/v0/b/frameimpacts-c9f47.appspot.com/o/rs%3Dw_1164%2Ch_582%2Ccg_true%20(1).jpeg?alt=media&token=db251d42-8785-468e-9aea-e4570748917f";
+const jrs =
+  "https://firebasestorage.googleapis.com/v0/b/frameimpacts-c9f47.appspot.com/o/rs%3Dw_1164%2Ch_582%2Ccg_true.jpeg?alt=media&token=600edaa1-90cf-48a3-82d8-3da3201638fd";
+const nest =
+  "https://firebasestorage.googleapis.com/v0/b/frameimpacts-c9f47.appspot.com/o/rs%3Dw_1164%2Ch_875%2Ccg_true.jpeg?alt=media&token=78ecad60-de9e-4c56-be0f-8c9105cf8a31";
+const john =
+  "https://firebasestorage.googleapis.com/v0/b/frameimpacts-c9f47.appspot.com/o/John%20Pautanlian%20Guite.png?alt=media&token=59547f3f-b3dd-4dfd-aad9-2dd52616d433";
 export {
+  john,
+  rayburncollege,
+  jrs,
+  nest,
   blog,
   logo,
   ngos,

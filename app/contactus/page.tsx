@@ -21,8 +21,8 @@ export default function ContactUs({}: Props) {
     window.location.href = `mailto:sangaihte@gmail.com?subject=${formData.subject}&body=Hi, my name is${formData.name}, ${formData.message} ${formData.email}`;
   };
   return (
-    <div className="h-screen flex flex-col text-center justify-evenly mx-auto items-center">
-      <div className="flex flex-col">
+    <div className="flex flex-col text-center justify-evenly mx-auto items-center ">
+      <div className="flex flex-col border-b shadow-md w-full pb-5">
         <h4 className="text-2xl p-5 md:text-4xl font-semibold justify-center text-center">
           Better yet, see us in person!
         </h4>
@@ -31,8 +31,8 @@ export default function ContactUs({}: Props) {
           hours.
         </p>
       </div>
-      <div className="grid grid-cols-2 space-y-5 space-x-10 items-center">
-        <div className="flex flex-col items-center justify-center">
+      <div className="grid grid-cols-2 space-y-5 space-x-10 items-center p-5">
+        <div className="flex flex-col items-center justify-center border shadow-lg pb-2 rounded-md">
           <h1 className="text-3xl m-2">FrameImpacts</h1>
           <p className="text-2xl m-2">
             FrameImpacts Consultancy Services, Nongrah, Shillong, Meghalaya,
@@ -81,7 +81,7 @@ export default function ContactUs({}: Props) {
           </form>
         </div>
 
-        <div className="flex p-5">
+        <div className="flex pb-7 pt-6 px-3 border shadow-lg rounded-md">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3598.959546254137!2d91.92063257416814!3d25.57301261637854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375079247a15b057%3A0x6905cd2d04232b15!2sFrameImpacts%20Consultancy%20Services!5e0!3m2!1sen!2sin!4v1715117889285!5m2!1sen!2sin"
             width="600"

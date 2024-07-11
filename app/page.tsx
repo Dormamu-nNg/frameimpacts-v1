@@ -6,16 +6,16 @@ import Fourth from "@/components/Fourth";
 export default function Home() {
   return (
     <main className="">
-      <section id="first">
+      <section id="first" className="border-b shadow-md pb-8">
         <First />
       </section>
-      <section id="second">
+      <section id="second" className="border-b shadow-md pb-8">
         <Second />
       </section>
-      <section id="third">
+      <section id="third" className="border-b shadow-md pb-8">
         <Third />
       </section>
-      <section id="=fourth">
+      <section id="fourth" className="border-b shadow-md pb-8">
         <Fourth />
       </section>
     </main>

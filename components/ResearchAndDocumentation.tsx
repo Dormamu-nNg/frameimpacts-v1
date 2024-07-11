@@ -14,13 +14,13 @@ type Props = {};
 
 function ResearchAndDocumentation({}: Props) {
   return (
-    <div className="flex flex-col my-5 bg-[#283618]">
+    <div className="flex flex-col my-5">
       <h1 className="text-2xl mx-auto text-[#bc6c25] font-bold my-1">
         RESEARCH & DOCUMENTATION
       </h1>
-      <div className="grid md:grid-cols-3 mx-auto">
-        <Card className="flex flex-col items-center my-3 mx-5 border border-[#606c38] bg-[#606c38]">
-          <CardHeader className="text-lg text-[#dda15e] font-bold my-1">
+      <div className="grid md:grid-cols-3 mx-auto my-7">
+        <Card className="flex flex-col items-center my-3 mx-5 border ">
+          <CardHeader className="text-gray-800 text-center text-lg font-bold my-1">
             Abandoned Single Mothers in East Khasi Hills
           </CardHeader>
           <CardContent className="flex flex-col items-center justify-center ">
@@ -32,7 +32,7 @@ function ResearchAndDocumentation({}: Props) {
               className="rounded-2xl my-1 border-2 border-gray-500 "
             />
             <CardDescription className="p-2 mx-auto ">
-              <p className="text-[#fefae0] text-lg text-balance text-center">
+              <p className="text-gray-600 text-base text-balance text-center">
                 This study was carried out in 4 blocks; Mawryngkneng block,
                 Mawkyrwat block, Laitkyrhong block, and Khatarshnong Laitkroh.
                 The study highlights the challenges faced by abandoned single
@@ -44,7 +44,7 @@ function ResearchAndDocumentation({}: Props) {
             </CardDescription>
           </CardContent>
         </Card>
-        <Card className="flex flex-col items-center my-3 mx-5 border border-[#606c38] bg-[#606c38]">
+        <Card className="flex flex-col items-center my-3 mx-5 border ">
           <CardHeader className="text-lg text-[#dda15e] font-bold my-1">
             Coming Soon!
           </CardHeader>

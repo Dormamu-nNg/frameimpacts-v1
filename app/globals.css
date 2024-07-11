@@ -100,7 +100,7 @@
       @apply font-semibold text-lg md:px-0 text-center text-white
     }
     .navLink{
-      @apply text-base text-[#121113] hover:text-[#F02D3A]  px-3 py-2 active:border border-[#F02D3A]
+      @apply text-base text-[#121113] hover:text-[#68f7fc]  px-3 py-2 active:border border-[#409ace]
     }
    
   }

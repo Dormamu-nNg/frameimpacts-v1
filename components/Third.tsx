@@ -11,7 +11,7 @@ export default function Third({}: Props) {
       <h2 className="p-5 text-center text-2xl font-semibold text-[#07a0c3] ">
         Unleashing Sustainable Impact through Serving, Learning and Sharing
       </h2>
-      <p className="p-5 text-left text-lg">
+      <p className="p-5 text-left text-base">
         FrameImpacts is is a social impact and development frontier agency that
         engages in diverse pivotal activities to foster sustainable social
         development. We champion a collaborative approach, working closely with
@@ -23,13 +23,13 @@ export default function Third({}: Props) {
         Our comprehensive services include:
       </h1>
       <ul className="list-decimal pl-6">
-        <li className="text-lg">
+        <li className="text-base">
           <span className="font-semibold">Tailored M&E:</span> We assist
           organizations in adopting and strengthening their M&E systems,
           ensuring program effectiveness, transparency, and accountability that
           aligns with their unique goals and objectives.
         </li>
-        <li className="text-lg">
+        <li className="text-base">
           <span className="font-semibold">
             Co-creation of Impactful Solutions:
           </span>
@@ -37,7 +37,7 @@ export default function Third({}: Props) {
           creating a learning environment that sparks innovative and impactful
           solutions tailored to specific needs.
         </li>
-        <li className="text-lg">
+        <li className="text-base">
           <span className="font-semibold">
             Data-Driven Insights for Sustainable Development:
           </span>
@@ -45,7 +45,7 @@ export default function Third({}: Props) {
           enabling informed decision-making that maximizes impact and drives
           sustainable development across Northeast India.
         </li>
-        <li className="text-lg">
+        <li className="text-base">
           <span className="font-semibold">
             Transformative Communication and Storytelling:
           </span>
@@ -53,7 +53,7 @@ export default function Third({}: Props) {
           organizations share their stories, garner support, and build positive
           social perceptions that amplify their impact.
         </li>
-        <li className="text-lg">
+        <li className="text-base">
           <span className="font-semibold">
             Capacity Building for Organizational Transformation:
           </span>

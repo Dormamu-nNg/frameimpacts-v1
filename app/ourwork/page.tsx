@@ -23,7 +23,7 @@ export default function OurWork({}: Props) {
           <TabsTrigger value="me">MENTORED ENTREPRENEURS</TabsTrigger>
         </TabsList>
         <TabsContent value="all" className="flex flex-col">
-          <section id="one">
+          <section id="one" className="border-b shadow-md">
             <CoDesignAndSupport />
           </section>
           <section id="two">

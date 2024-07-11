@@ -1,10 +1,7 @@
 import React from "react";
-import photo1 from "../public/photo.webp";
-import photo2 from "../public/photo2.webp";
-import photo3 from "../public/photo3.webp";
-import photo4 from "../public/photo4.webp";
 
 import Image from "next/image";
+import { photo1, photo2, photo3, photo4, john } from "@/images";
 
 type Props = {};
 
@@ -39,7 +36,6 @@ function OurTeam({}: Props) {
           </div>
         </div>
         <div className="grid grid-cols-12 m-2 p-2 items-center bg-gray-900 rounded-2xl">
-
           <Image
             src={photo2}
             alt="Photo"
@@ -64,8 +60,30 @@ function OurTeam({}: Props) {
             </p>
           </div>
         </div>
+        <div className="grid grid-cols-12 m-2 p-2 items-center bg-gray-900 rounded-2xl">
+          <Image
+            src={john}
+            alt="Photo"
+            width={500}
+            height={500}
+            className="rounded-2xl border border-gray-500 mt-5 col-span-4 h-80 "
+          />
+          <div className="col-span-8 p-3 items-center">
+            <h1 className="ourteamH">John Pautanlian Guite</h1>
+            <h1 className="ourteamH text-gray-500">Business Strategic Lead</h1>
+            <p className="ourteamP ">
+              With a background in Business Administration and a passion for
+              innovation, he thrives in dynamic environments, driving growth and
+              practical solutions. His journey spans from start-up ecosystems to
+              reputable organizations such as IGGL, AIESEC, and PanaceaX. By
+              blending fresh insights with hands-on experience, he focuses on
+              developing sustainable and impactful strategies. Ready to lead and
+              inspire, he brings a unique perspective to every challenge,
+              ensuring measurable success and lasting impact.
+            </p>
+          </div>
+        </div>
         <div className="grid grid-cols-12 m-2  p-2 items-center bg-gray-900 rounded-2xl">
-
           <Image
             src={photo3}
             alt="Photo"
@@ -87,7 +105,6 @@ function OurTeam({}: Props) {
           </div>
         </div>
         <div className="grid grid-cols-12 m-2 p-2 items-center bg-gray-900 rounded-2xl">
-
           <Image
             src={photo4}
             alt="Photo"

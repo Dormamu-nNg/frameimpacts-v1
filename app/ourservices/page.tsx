@@ -24,16 +24,16 @@ export default function OurServices({}: Props) {
           <button className="heroButton">RAS</button>
         </Link>
       </div>
-      <section id="CapacityBuilding" className="pt-8 bg-[#3c096c] w-full">
+      <section id="CapacityBuilding" className="pt-10 border-b shadow-md">
         <CapacityBuildingServices />
       </section>
-      <section id="CoDesignFrameworks" className="pt-8 bg-[#283618] w-full">
+      <section id="CoDesignFrameworks" className="pt-5 border-b shadow-md">
         <CoDesignFrameworks />
       </section>
-      <section id="StartUpMentoring" className="pt-8 bg-[#65000B] w-full">
+      <section id="StartUpMentoring">
         <StartUpMentoring />
       </section>
-      <section id="ras" className="pt-8 bg-[#ddd0c8] w-full">
+      <section id="ras" className="pt-5 border-b shadow-md">
         <Ras />
       </section>
     </div>

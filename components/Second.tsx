@@ -11,7 +11,7 @@ export default function Second({}: Props) {
         <p className="font-bold pt-5 text-4xl uppercase text-[#F02D3A]">
           Vision
         </p>
-        <div className="flex border-2 border-[#9899A6] p-3 rounded-xl">
+        <div className="flex border-2 border-[#9899A6] shadow-md p-3 rounded-xl">
           <Image
             className="rounded-xl"
             src={vision}
@@ -34,7 +34,7 @@ export default function Second({}: Props) {
         <p className="font-bold pt-5 text-4xl uppercase text-[#F02D3A]">
           Mission
         </p>
-        <div className="flex border-2 border-[#9899A6] p-3 rounded-xl">
+        <div className="flex border-2 border-[#9899A6] shadow-md p-3 rounded-xl">
           <Image
             className="rounded-xl"
             src={mission}
