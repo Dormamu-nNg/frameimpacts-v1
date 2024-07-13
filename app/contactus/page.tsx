@@ -6,6 +6,8 @@ import Image from "next/image";
 import React from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { GoogleMapsEmbed } from "@next/third-parties/google";
+import { whatsapp } from "@/images";
+import Link from "next/link";
 
 type Props = {};
 type Inputs = {
@@ -21,8 +23,8 @@ export default function ContactUs({}: Props) {
     window.location.href = `mailto:sangaihte@gmail.com?subject=${formData.subject}&body=Hi, my name is${formData.name}, ${formData.message} ${formData.email}`;
   };
   return (
-    <div className="flex flex-col text-center justify-evenly mx-auto items-center ">
-      <div className="flex flex-col border-b shadow-md w-full pb-5">
+    <div className="flex flex-col text-center justify-evenly items-center ">
+      <div className="flex flex-col border-b-2 text-balance items-center justify-center pb-5">
         <h4 className="text-2xl p-5 md:text-4xl font-semibold justify-center text-center">
           Better yet, see us in person!
         </h4>
@@ -30,24 +32,49 @@ export default function ContactUs({}: Props) {
           We love our customers, so feel free to visit during normal business
           hours.
         </p>
+        <hr className="m-5 border shadow-md" />
+        <h1 className="text-xl m-2 md:text-3xl ">FrameImpacts</h1>
+        <p className="text-lg md:text-2xl m-2">
+          FrameImpacts Consultancy Services, Nongrah, Shillong, Meghalaya,
+          India,
+        </p>
+        <p className="flex text-lg md:text-xl">
+          <PhoneCall /> : 7896892183
+        </p>
+        <a
+          className="m-3"
+          aria-label="Chat on WhatsApp"
+          href="https://wa.me/1XXXXXXXXXX"
+        >
+          <Image
+            width={200}
+            height={80}
+            alt="Chat on WhatsApp"
+            src={whatsapp}
+          />
+        </a>
+        <h1 className="text:xl md:text-3xl m-2">Hours</h1>
+        {/* Timing here */}
       </div>
-      <div className="grid grid-cols-2 space-y-5 space-x-10 items-center p-5">
+      <div className="flex flex-col md:flex-row space-y-5 space-x-10 items-center p-5">
+        <div className="flex  border shadow-sm rounded-md border-b">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3598.959546254137!2d91.92063257416814!3d25.57301261637854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375079247a15b057%3A0x6905cd2d04232b15!2sFrameImpacts%20Consultancy%20Services!5e0!3m2!1sen!2sin!4v1715117889285!5m2!1sen!2sin"
+            width="400"
+            height="350"
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="border-0"
+          ></iframe>
+        </div>
+
         <div className="flex flex-col items-center justify-center border shadow-lg pb-2 rounded-md">
-          <h1 className="text-3xl m-2">FrameImpacts</h1>
-          <p className="text-2xl m-2">
-            FrameImpacts Consultancy Services, Nongrah, Shillong, Meghalaya,
-            India,
-          </p>
-          <p className="flex text-xl">
-            <PhoneCall /> : 7896892183
-          </p>
-          <h1 className="text-3xl m-2">Hours</h1>
-          {/* Timing here */}
           <form
             onSubmit={handleSubmit(onSubmit)}
             className="flex flex-col space-y-2 mx-auto"
           >
-            <div className="flex space-x-2">
+            <div className="flex flex-col md:flex-row space-x-2">
               <input
                 {...register("name")}
                 placeholder="Name"
@@ -79,18 +106,6 @@ export default function ContactUs({}: Props) {
               Submit
             </button>
           </form>
-        </div>
-
-        <div className="flex pb-7 pt-6 px-3 border shadow-lg rounded-md">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3598.959546254137!2d91.92063257416814!3d25.57301261637854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375079247a15b057%3A0x6905cd2d04232b15!2sFrameImpacts%20Consultancy%20Services!5e0!3m2!1sen!2sin!4v1715117889285!5m2!1sen!2sin"
-            width="600"
-            height="450"
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            className="border-0"
-          ></iframe>
         </div>
       </div>
     </div>

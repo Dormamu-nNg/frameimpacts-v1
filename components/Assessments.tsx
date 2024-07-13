@@ -14,7 +14,7 @@ type Props = {};
 function Assessments({}: Props) {
   return (
     <div className="flex flex-col my-5">
-      <h1 className="text-2xl mx-auto text-[#FFB20F] font-bold my-1">
+      <h1 className="text-2xl md:text-5xl mx-auto text-red-500 font-bold my-1">
         ASSESSMENTS
       </h1>
       <div className="grid md:grid-cols-3 mx-auto my-7 ">

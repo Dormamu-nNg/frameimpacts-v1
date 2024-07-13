@@ -50,7 +50,10 @@ const nest =
   "https://firebasestorage.googleapis.com/v0/b/frameimpacts-c9f47.appspot.com/o/rs%3Dw_1164%2Ch_875%2Ccg_true.jpeg?alt=media&token=78ecad60-de9e-4c56-be0f-8c9105cf8a31";
 const john =
   "https://firebasestorage.googleapis.com/v0/b/frameimpacts-c9f47.appspot.com/o/John%20Pautanlian%20Guite.png?alt=media&token=59547f3f-b3dd-4dfd-aad9-2dd52616d433";
+const whatsapp =
+  "https://firebasestorage.googleapis.com/v0/b/frameimpacts-c9f47.appspot.com/o/WhatsAppButtonGreenMedium.png?alt=media&token=1764a8f7-8389-4224-8e0d-24e6487a1914";
 export {
+  whatsapp,
   john,
   rayburncollege,
   jrs,

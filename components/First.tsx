@@ -15,15 +15,18 @@ export default function First({}: Props) {
           alt="Picture of the author"
           width={1920}
           height={720}
+          style={{
+            opacity: "90%",
+          }}
           // blurDataURL="data:..." automatically provided
-          // placeholder=" this is thext" // Optional blur-up while loading
+          // placeholder="blur" // Optional blur-up while loading
         />
         <div
           className="hidden lg:inline absolute mt-0 top-0 pt-40 xl:pt-52 left-0 lg:mt-30 bg-transparent z-20 h-full w-full
          bg-gradient-to-r from-gray-900/90 via-transparent to-transparent p-10 space-y-5 items-center text-[#121113]"
         >
           {/* Style will be inherited from the parent element */}
-          <p className="text-6xl font-bold max-w-xl z-50 text-[#F1C40F]">
+          <p className="text-6xl font-bold max-w-xl z-50 text-[#68f7fc]">
             Unlocking Potential, Igniting Change for Sustainable Development
           </p>
           {/* <Link

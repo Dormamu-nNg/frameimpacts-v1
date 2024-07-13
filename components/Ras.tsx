@@ -4,9 +4,9 @@ type Props = {};
 
 function Ras({}: Props) {
   return (
-    <div className="flex flex-col mx-auto items-start md:max-w-5xl p-10">
+    <div className="flex flex-col mx-auto md:max-w-5xl p-10">
       <div className="flex flex-col space-y-5">
-        <h1 className="text-4xl font-bold text-black">
+        <h1 className="text-5xl text-center mt-5 font-bold text-blue-600">
           RESEARCH, ASSESSMENT, SHARING
         </h1>
         <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
@@ -21,7 +21,7 @@ function Ras({}: Props) {
         </blockquote>
       </div>
       <div className="flex flex-col mt-10 space-y-5">
-        <h1 className="text-3xl font-bold text-black">RESEARCH</h1>
+        <h1 className="text-3xl font-bold text-blue-500">RESEARCH</h1>
         <p className="text-base text-gray-600">
           Research is a systematic process of investigation undertaken to
           establish facts and knowledge. It is applied to any field of study and
@@ -55,7 +55,7 @@ function Ras({}: Props) {
         </p>
       </div>
       <div className="flex flex-col mt-10 space-y-5">
-        <h1 className="text-3xl font-bold text-black">ASSESSMENT</h1>
+        <h1 className="text-3xl font-bold text-blue-500">ASSESSMENT</h1>
         <h1 className="text-xl font-semibold text-gray-900">
           Needs Assessment
         </h1>
@@ -144,7 +144,7 @@ function Ras({}: Props) {
         </ul>
       </div>
       <div className="flex flex-col mt-10 space-y-5">
-        <h1 className="text-3xl font-bold text-black">SHARING</h1>
+        <h1 className="text-3xl font-bold text-blue-500">SHARING</h1>
         <h1 className="text-xl font-semibold text-gray-900">
           Sharing of learning, gain information, insights, recommendations and
           suggestions to teams, communities, stakeholders, and leaders is a

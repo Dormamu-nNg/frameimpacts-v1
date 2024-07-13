@@ -4,10 +4,12 @@ type Props = {};
 
 function CoDesignFrameworks({}: Props) {
   return (
-    <div className="flex flex-col mx-auto items-start md:max-w-5xl p-10">
-      <h1 className="text-4xl font-bold text-black]">Co-Design Frameworks</h1>
+    <div className="flex flex-col mx-auto md:max-w-5xl p-10">
+      <h1 className="text-5xl mt-5 font-bold text-center text-blue-600">
+        Co-Design Frameworks
+      </h1>
       <div className="flex flex-col space-y-5 pt-10">
-        <h2 className="text-xl font-semibold text-gray-900">
+        <h2 className="text-2xl font-semibold text-gray-900">
           What is it about?
         </h2>
         <p className="text-base text-balance text-gray-600">
@@ -79,7 +81,7 @@ function CoDesignFrameworks({}: Props) {
         </ul>
       </div>
       <div className="flex flex-col mt-10 space-y-5">
-        <h1 className="text-4xl font-bold text-gray-900">SLFA/TOC</h1>
+        <h1 className="text-4xl font-bold text-blue-900">SLFA/TOC</h1>
         <h1 className="text-xl font-semibold text-gray-800">
           Logical Framework Approach
         </h1>
@@ -107,7 +109,7 @@ function CoDesignFrameworks({}: Props) {
         </p>
       </div>
       <div className="flex flex-col mt-10 space-y-5">
-        <h1 className="text-4xl font-bold text-gray-800">M&E Framework</h1>
+        <h1 className="text-4xl font-bold text-blue-800">M&E Framework</h1>
         <h1 className="text-xl font-semibold text-gray-800">
           Financial Planning Consulting
         </h1>

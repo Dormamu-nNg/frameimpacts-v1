@@ -16,37 +16,37 @@ export default function OurWork({}: Props) {
       <Tabs defaultValue="all" className="flex flex-col w-full mx-auto mt-10">
         <TabsList className="hidden md:inline-flex mx-auto">
           <TabsTrigger value="all">All</TabsTrigger>
-          <TabsTrigger value="cds">CO-DESIGN & SUPPORT</TabsTrigger>
-          <TabsTrigger value="assessments">ASSESSMENTS</TabsTrigger>
           <TabsTrigger value="cb">CAPACITY BUILDING</TabsTrigger>
+          <TabsTrigger value="assessments">ASSESSMENTS</TabsTrigger>
+          <TabsTrigger value="cds">CO-DESIGN & SUPPORT</TabsTrigger>
           <TabsTrigger value="rd">RESEARCH & DOCUMENTATION</TabsTrigger>
           <TabsTrigger value="me">MENTORED ENTREPRENEURS</TabsTrigger>
         </TabsList>
         <TabsContent value="all" className="flex flex-col">
           <section id="one" className="border-b shadow-md">
-            <CoDesignAndSupport />
-          </section>
-          <section id="two">
-            <Assessments />
-          </section>
-          <section id="three">
             <CapacityBuilding />
           </section>
-          <section id="four">
+          <section id="two" className="border-b shadow-md">
+            <Assessments />
+          </section>
+          <section id="three" className="border-b shadow-md">
+            <CoDesignAndSupport />
+          </section>
+          <section id="four" className="border-b shadow-md">
             <ResearchAndDocumentation />
           </section>
-          <section id="five">
+          <section id="five" className="border-b shadow-md">
             <MentoredEntrepreneurs />
           </section>
         </TabsContent>
-        <TabsContent value="cds">
-          <CoDesignAndSupport />
+        <TabsContent value="cb">
+          <CapacityBuilding />
         </TabsContent>
         <TabsContent value="assessments">
           <Assessments />
         </TabsContent>
-        <TabsContent value="cb">
-          <CapacityBuilding />
+        <TabsContent value="cds">
+          <CoDesignAndSupport />
         </TabsContent>
         <TabsContent value="rd">
           <ResearchAndDocumentation />

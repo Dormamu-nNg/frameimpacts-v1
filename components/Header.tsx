@@ -27,7 +27,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="flex md:items-center max-w-6xl mx-auto justify-between p-2">
+    <div className="flex md:items-center max-w-7xl mx-auto justify-between p-2">
       <Link href="/" className="flex items-center">
         <Image
           src={logo}
@@ -36,9 +36,9 @@ export default function Header() {
           width={60}
           height={60}
         />
-        <h1 className="p-3 font-light uppercase font-mono text-[#ffb703]">
+        {/* <h1 className="p-3 font-light uppercase font-mono text-[#ffb703]">
           FrameImpacts
-        </h1>
+        </h1> */}
       </Link>
       <div className="md:hidden inline-flex justify-center">
         <Sheet>

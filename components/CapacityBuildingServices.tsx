@@ -4,10 +4,12 @@ type Props = {};
 
 function CapacityBuildingServices({}: Props) {
   return (
-    <div className="flex flex-col mx-auto items-start md:max-w-5xl p-10 ">
+    <div className="flex flex-col mx-auto md:max-w-5xl p-10 ">
       <div className="flex flex-col space-y-5">
-        <h1 className="text-4xl font-bold text-black">CAPACITY BUILDING</h1>
-        <h2 className="text-3xl font-semibold text-gray-900">
+        <h1 className="text-5xl mt-5 text-center font-bold text-blue-600">
+          CAPACITY BUILDING
+        </h1>
+        <h2 className="text-2xl font-semibold text-gray-900">
           TYPES OF TRAINING & WORKSHOP
         </h2>
         <p className="text-xl text-gray-800">
@@ -24,7 +26,7 @@ function CapacityBuildingServices({}: Props) {
         </ul>
       </div>
       <div className="flex flex-col mt-10 space-y-5">
-        <h1 className="text-4xl font-bold text-gray-800">WHY ?</h1>
+        <h1 className="text-3xl font-bold text-gray-800">WHY ?</h1>
         <p className="text-base text-gray-600">
           Capacity Building is a conceptual approach to improve the knowledge
           and skills of an individual and teams for institutional or
@@ -42,7 +44,7 @@ function CapacityBuildingServices({}: Props) {
         </p>
       </div>
       <div className="flex flex-col mt-10 space-y-5">
-        <h1 className="text-4xl font-bold text-gray-800">OBJECTIVES</h1>
+        <h1 className="text-3xl font-bold text-gray-800">OBJECTIVES</h1>
         <ul className="list-disc pl-5 space-y-3">
           <li className="text-base text-gray-600">
             <span className="font-semibold">

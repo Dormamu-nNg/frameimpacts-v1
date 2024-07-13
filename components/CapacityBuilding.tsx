@@ -15,7 +15,7 @@ type Props = {};
 function CapacityBuilding({}: Props) {
   return (
     <div className="flex flex-col my-5">
-      <h1 className="text-2xl mx-auto text-red-500 font-bold my-1">
+      <h1 className="text-2xl md:text-5xl mx-auto text-red-500 font-bold my-1">
         CAPACITY BUILDING
       </h1>
       <div className="grid md:grid-cols-3 mx-auto my-7">
@@ -41,7 +41,7 @@ function CapacityBuilding({}: Props) {
         </Card>
         <Card className="flex flex-col items-center my-3 mx-5 shadow-sm ">
           <CardHeader className="text-gray-600 text-base font-bold my-1">
-            NESTn
+            NEST
           </CardHeader>
           <CardContent className="flex flex-col items-center justify-center ">
             <Image

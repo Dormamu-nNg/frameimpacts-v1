@@ -14,7 +14,7 @@ type Props = {};
 function MentoredEntrepreneurs({}: Props) {
   return (
     <div className="flex flex-col my-5">
-      <h1 className="text-2xl mx-auto text-red-500 font-bold my-1">
+      <h1 className="text-2xl md:text-5xl mx-auto text-red-500 font-bold my-1">
         RESEARCH & DOCUMENTATION
       </h1>
       <div className="grid md:grid-cols-2 mx-auto">
